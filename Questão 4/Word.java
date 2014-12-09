@@ -1,6 +1,6 @@
 //Código criado para a questão 4, pois não sabia se para a correção da questão 1 poderia existir os métodos da questão 4!
 
-class Word2 extends File implements Rotatable, Positionable {
+class Word extends File implements Rotatable, Positionable {
 
     private String word;
 	private boolean bold;

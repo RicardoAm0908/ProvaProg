@@ -2,7 +2,7 @@ class GerenciadorEstilo {
 	public static void aplicaEstilo(String style, File fle) throws EPalavraPequena, EElementoIncompativel {
 		if (!(fle instanceof Word)) {
 			throw new EElementoIncompativel();
-		} else if (((Word)fle).getTexto().length() < 2) {
+		} else if (((Word)fle).getWord().length() < 2) {
 			throw new EPalavraPequena();
 		}
 		Word w = (Word)fle;

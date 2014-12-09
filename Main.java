@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 class Main {
 	public static void main(String[] args) {
-		ArrayList<File> elements = new ArrayList<Objeto>();
+		ArrayList<File> elements = new ArrayList<File>();
 		Word palavra = new Word("palavra");
 
 		palavra.setItalic(true);

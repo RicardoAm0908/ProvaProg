@@ -1,22 +1,17 @@
 class OrganizaConteudo {
-
-    public static void removeRotacoes(File a){
-
-        if(a instanceof Rotatable){
-            ((Rotatable) a).setRotation(0);
-        }
-
-    };
-
-    public static void economizaTamanho(File a){
-
-        if( a instanceof Resizable){
-            ((Resizable).a).setHeight(200);
-            ((Resizable).a).setWidth(200);
-        }
-
-
-
-
-    };
+    public static void removeRotacoes(File[] elements) {
+		for (int b = 0; b < elements.length; b++) {
+			if (elements[b] instanceof Rotatable){
+				((Rotatable)elements[b]).setRotation(0);
+			}
+		}
+    }
+    public static void economizaTamanho(File[] elements) {
+        for (int b = 0; b < elements.length; b++) {
+			if (elements[i] instanceof Resizable){
+				((Resizable)elements[b]).setHeight(200);
+				((Resizable)elements[b]).setWidth(200);
+			}
+		}
+    }
 }

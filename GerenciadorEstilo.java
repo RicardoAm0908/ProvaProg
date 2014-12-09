@@ -1,5 +1,5 @@
 class GerenciadorEstilo {
-	public static void aplicaEstilo(String style, Objeto fle) throws EPalavraPequena, EElementoIncompativel {
+	public static void aplicaEstilo(String style, File fle) throws EPalavraPequena, EElementoIncompativel {
 		if (!(fle instanceof Word)) {
 			throw new EElementoIncompativel();
 		} else if (((Word)fle).getTexto().length() < 2) {

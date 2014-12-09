@@ -8,10 +8,10 @@ class Main {
 		palavra.setItalic(true);
 		elements.add(palavra);
 
-		Image m = new Image(50, 30, 0);
+		Image m = new Image(40, 50, 10);
 		elements.add(m);
 
-		Video video = new Video(120, 180);
+		Video video = new Video(180, 165);
 		elements.add(video);
 
 		int n = elements.size();
@@ -19,7 +19,7 @@ class Main {
 		for (int i = 0; i < n; i++) {
 			obj = elements.get(i);
 			if (obj instanceof Image) {
-				((Image)obj).setRotacao(120);
+				((Image)obj).setRotacao(90);
 			} else if (obj instanceof Word) {
 				((Word)obj).setSublinhado(true);
 			}

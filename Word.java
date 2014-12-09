@@ -1,10 +1,9 @@
 class Word extends File implements Rotatable {
+
+    private String word;
 	private boolean bold;
 	private boolean italic;
 	private boolean underlined;
-
-	private String word;
-
 	private int rotation;
 
 	public Word(String word) {
@@ -13,6 +12,15 @@ class Word extends File implements Rotatable {
 		this.bold = false;
 		this.italic = false;
 		this.underlined = false;
+	}
+
+
+    public int getRotation() {
+		return this.rotation;
+	}
+
+	public void setRotation(int r) {
+		this.rotation = r;
 	}
 
 	public boolean getBold() {
@@ -47,12 +55,6 @@ class Word extends File implements Rotatable {
 		this.word = w;
 	}
 
-	public int getRotation() {
-		return this.rotation;
-	}
 
-	public void setRotation(int r) {
-		this.rotation = r;
-	}
 
 }
